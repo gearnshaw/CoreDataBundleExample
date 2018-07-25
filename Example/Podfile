@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CoreDataBundleExample_Example' do
+  pod 'CoreDataBundleExample', :path => '../'
+
+  target 'CoreDataBundleExample_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
