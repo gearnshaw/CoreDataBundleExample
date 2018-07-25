@@ -1,15 +1,24 @@
 PODS:
-  - CoreDataBundleExample (0.1.0)
+  - CoreDataBundleExample (0.1.0):
+    - MagicalRecord (~> 2.3)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
 
 DEPENDENCIES:
   - CoreDataBundleExample (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MagicalRecord
 
 EXTERNAL SOURCES:
   CoreDataBundleExample:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreDataBundleExample: 6e324320c48a139183cc3be27b99f871f43880b6
+  CoreDataBundleExample: 95cf4e80a92692c9911bafa6131517e89ccd4c90
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
 PODFILE CHECKSUM: 13f7a019e6187fa73f5797cce2702afa7aebb53f
 

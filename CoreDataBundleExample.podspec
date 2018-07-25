@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'CoreDataBundleExample'
   s.version          = '0.1.0'
   s.summary          = 'Testing issues with bundle dependencies.'
+  s.swift_version    = '4.1'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +19,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A test project to isolate issues with bundle dependencies
+A test project to isolate issues with bundle dependencies in CocoaPods
                        DESC
 
-  s.homepage         = 'https://github.com/Gabrielle Earnshaw/CoreDataBundleExample'
+  s.homepage         = 'https://github.com/gearnshaw/CoreDataBundleExample'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gabrielle Earnshaw' => 'gabrielle.earnshaw@controlf1.co.uk' }
-  s.source           = { :git => 'https://github.com/Gabrielle Earnshaw/CoreDataBundleExample.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/gearnshaw/CoreDataBundleExample.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'CoreDataBundleExample/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CoreDataBundleExample' => ['CoreDataBundleExample/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'CoreDataBundleExample.model' => ['CoreDataBundleExample/Assets/*.xcdatamodeld']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MagicalRecord', '~> 2.3'
 end

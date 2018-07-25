@@ -1,9 +1,10 @@
 {
   "name": "CoreDataBundleExample",
   "version": "0.1.0",
-  "summary": "A short description of CoreDataBundleExample.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Gabrielle Earnshaw/CoreDataBundleExample",
+  "summary": "Testing issues with bundle dependencies.",
+  "swift_version": "4.1",
+  "description": "A test project to isolate issues with bundle dependencies in CocoaPods",
+  "homepage": "https://github.com/gearnshaw/CoreDataBundleExample",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,21 @@
     "Gabrielle Earnshaw": "gabrielle.earnshaw@controlf1.co.uk"
   },
   "source": {
-    "git": "https://github.com/Gabrielle Earnshaw/CoreDataBundleExample.git",
+    "git": "https://github.com/gearnshaw/CoreDataBundleExample.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "CoreDataBundleExample/Classes/**/*"
+  "source_files": "CoreDataBundleExample/Classes/**/*",
+  "resource_bundles": {
+    "CoreDataBundleExample.model": [
+      "CoreDataBundleExample/Assets/*.xcdatamodeld"
+    ]
+  },
+  "dependencies": {
+    "MagicalRecord": [
+      "~> 2.3"
+    ]
+  }
 }
