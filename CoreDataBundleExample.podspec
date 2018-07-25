@@ -34,7 +34,7 @@ A test project to isolate issues with bundle dependencies in CocoaPods
   s.source_files = 'CoreDataBundleExample/Classes/**/*'
   
   s.resource_bundles = {
-    'CoreDataBundleExample.model' => ['CoreDataBundleExample/Assets/*.xcdatamodeld']
+    'CoreDataBundleExample' => ['CoreDataBundleExample/Assets/*.xcdatamodeld']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
