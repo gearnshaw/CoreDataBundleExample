@@ -1,0 +1,16 @@
+PODS:
+  - CoreDataBundleExample (0.1.0)
+
+DEPENDENCIES:
+  - CoreDataBundleExample (from `../`)
+
+EXTERNAL SOURCES:
+  CoreDataBundleExample:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CoreDataBundleExample: 6e324320c48a139183cc3be27b99f871f43880b6
+
+PODFILE CHECKSUM: 13f7a019e6187fa73f5797cce2702afa7aebb53f
+
+COCOAPODS: 1.5.3

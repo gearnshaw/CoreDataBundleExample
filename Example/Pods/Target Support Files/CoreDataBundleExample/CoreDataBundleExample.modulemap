@@ -1,0 +1,6 @@
+framework module CoreDataBundleExample {
+  umbrella header "CoreDataBundleExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
